@@ -20,14 +20,14 @@ body {
   text-shadow: 1px 2px 2px black;
 }
 
-.between {
+.shortcuts {
   text-align: right;
   margin: 30px 15px;
 }
 
 .btn {
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 10px;
+  /* margin-left: 15px; */
   border: 2px solid black;
   font-family: inherit;
   font-size: 30px;
@@ -41,14 +41,15 @@ body {
 
 .btn:hover {
   border-color: white;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
   color: white;
+  background-image: linear-gradient(
+    to right,
+    #618341,
+    #739d42,
+    #87b841,
+    #9dd33e,
+    #b5ee36
+  );
 }
 
 .number-box {
@@ -69,6 +70,7 @@ body {
 
 .number-box:hover {
   color: blueviolet;
+  font-size: 70px;
 }
 
 main {
@@ -104,7 +106,7 @@ main {
   padding: 50px;
 }
 .msg {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-size: 35px;
 }
 .score {
@@ -117,4 +119,7 @@ main {
   text-align: center;
   flex-direction: column-reverse;
   margin-top: 60px;
+}
+.aplace {
+  margin-bottom: 30px;
 }

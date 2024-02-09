@@ -98,8 +98,8 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-document.addEventListener("keydown", (a) => {
-  if (a.code === "KeyA") {
+document.addEventListener("keydown", (r) => {
+  if (r.code === "KeyR") {
     document.querySelector(".again").click();
   }
 });
