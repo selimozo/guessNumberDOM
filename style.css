@@ -17,12 +17,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: tomato;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 2px 2px black;
 }
 
 .between {
   text-align: right;
-  margin: 30px 10px;
+  margin: 30px 15px;
 }
 
 .btn {
@@ -61,18 +61,28 @@ body {
   color: #333;
   font-size: 60px;
   text-align: center;
+  transition: all 0.2s ease-in;
   transform: translate(-50%, 50%);
+  border-radius: 15px;
+  border: 2px solid blueviolet;
 }
+
+.number-box:hover {
+  color: blueviolet;
+}
+
 main {
-  height: 600px;
+  height: 490px;
   color: #eee;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .right {
   width: 400px;
   font-size: 20px;
+  text-align: center;
 }
 
 .left {

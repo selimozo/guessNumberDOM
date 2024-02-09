@@ -18,8 +18,6 @@ const colors = [
 const getColor = () => colors[Math.floor(Math.random() * colors.length)];
 
 let randomNumber = Math.ceil(Math.random() * 100);
-console.log(randomNumber);
-
 let msg = document.querySelector(".msg");
 
 let score = 10;
@@ -77,7 +75,6 @@ document.querySelector(".again").onclick = () => {
   document.querySelector("body").style.backgroundColor = getColor();
   document.querySelector(".check").classList.remove("check-none");
   randomNumber = Math.ceil(Math.random() * 100);
-  console.log(randomNumber);
   score = 10;
   document.querySelector(".score").textContent = score;
   document.querySelector(".number-box").textContent = "=?";
@@ -87,14 +84,27 @@ document.querySelector(".again").onclick = () => {
   document.querySelector("main").classList.remove("align-center");
 };
 
-// enter thing
+// focus on input
+window.addEventListener("load", () => {
+  document.querySelector(".guess").focus();
+  // it does when window load you are gonna focus on input.
+});
+
+// shortcuts
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
+  if (e.code === "Enter") {
     // when u press enter trigger check button
     document.querySelector(".check").click();
   }
 });
 
+document.addEventListener("keydown", (a) => {
+  if (a.code === "KeyA") {
+    document.querySelector(".again").click();
+  }
+});
+
+// html sanitizer
 var html;
 
 //run with default settings
