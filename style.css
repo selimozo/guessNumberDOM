@@ -76,13 +76,12 @@ body {
 }
 
 .number-box:hover {
-  /* color: red; */
-  /* font-size: 70px; */
+  color: blueviolet;
 }
 
 main {
   margin-top: 50px;
-  height: 490px;
+  height: 480px;
   color: #eee;
   display: flex;
   justify-content: space-evenly;

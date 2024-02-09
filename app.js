@@ -1,19 +1,6 @@
 // selimozo
-// function getRandomColor() {
-//   let letters = "0123456789ABCDEF";
-//   let color = "#";
-//   for (let i = 0; i < 6; i++) {
-//     color += letters[Math.floor(Math.random() * 16)];
-//   }
-//   return color;
-// }
-const colors = [
-  "#2193b0",
-  "#753a88",
-  "orange",
-  "#42275a",
-  "#2c3e50",
-];
+
+const colors = ["#2193b0", "#753a88", "#8B4000", "#42275a", "#2c3e50"];
 const getColor = () => colors[Math.floor(Math.random() * colors.length)];
 
 let randomNumber = Math.ceil(Math.random() * 100);
@@ -37,7 +24,7 @@ document.querySelector(".check").addEventListener("click", () => {
     document.querySelector(".check").classList.add("check-none");
     document.querySelector(".guess").classList.add("check-none");
     document.querySelector("main").classList.add("align-center");
-    document.querySelector(".shortcuts").classList.add("check-none")
+    document.querySelector(".shortcuts").classList.add("check-none");
     // check topScore
     if (score > topScore) {
       topScore = score;
@@ -63,14 +50,18 @@ document.querySelector(".check").addEventListener("click", () => {
       document.querySelector("body").style.backgroundColor = "red";
       document.querySelector(".check").classList.add("check-none");
       document.querySelector(".guess").classList.add("check-none");
-      document.querySelector(".shortcuts").classList.add("check-none")
+      document.querySelector(".shortcuts").classList.add("check-none");
       document.querySelector("main").classList.add("align-center");
       document.querySelector(".number-box").textContent = randomNumber;
       document.querySelector(".msg").classList.add("finito");
-
     }
   }
 });
+
+document.querySelector(".check").addEventListener("click", () => {
+  document.querySelector(".guess").value = ""
+})
+
 
 // when u press again button. reset the game but save the topscore.
 
@@ -85,7 +76,7 @@ document.querySelector(".again").onclick = () => {
   document.querySelector(".msg").textContent = "Game Starts! (1-100)";
   document.querySelector(".guess").classList.remove("check-none");
   document.querySelector("main").classList.remove("align-center");
-  document.querySelector(".shortcuts").classList.remove("check-none")
+  document.querySelector(".shortcuts").classList.remove("check-none");
 };
 
 // focus on input
