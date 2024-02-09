@@ -17,7 +17,7 @@ const colors = [
   ];
   const getColor = () => colors[Math.floor(Math.random() * colors.length)];
   
-  let randomNumber = Math.ceil(Math.random() * 20);
+  let randomNumber = Math.ceil(Math.random() * 100);
   console.log(randomNumber);
   
   let msg = document.querySelector(".msg");
@@ -29,8 +29,8 @@ const colors = [
   document.querySelector(".check").addEventListener("click", () => {
     const guess = document.querySelector(".guess").value;
   
-    if (guess > 20 || guess <= 0) {
-      msg.textContent = "make guess between 1-20!";
+    if (guess > 100 || guess <= 0) {
+      msg.textContent = "make guess between 1-100!";
     }
     // if number correct
     else if (guess == randomNumber) {
@@ -72,13 +72,13 @@ const colors = [
   document.querySelector(".again").onclick = () => {
     document.querySelector("body").style.backgroundColor = getColor();
     document.querySelector(".check").classList.remove("check-none");
-    randomNumber = Math.ceil(Math.random() * 20);
+    randomNumber = Math.ceil(Math.random() * 100);
     console.log(randomNumber);
     score = 10;
     document.querySelector(".score").textContent = score;
     document.querySelector(".number-box").textContent = "=?";
     document.querySelector(".guess").value = "";
-    document.querySelector(".msg").textContent = "Game Starts! (1-20)";
+    document.querySelector(".msg").textContent = "Game Starts! (1-100)";
     document.querySelector(".guess").classList.remove("check-none");
   };
   
