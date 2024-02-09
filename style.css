@@ -1,100 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  header {
-    position: relative;
-    height: 300px;
-  }
-  h1 {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-  }
-  
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    background-color: tomato;
-    text-shadow: 1px 1px 1px black;
-  }
-  
-  .between {
-    text-align: right;
-    margin: 30px 10px;
-  }
-  
-  .btn {
-    margin-top: 15px;
-    margin-left: 15px;
-    border: 2px solid black;
-    font-family: inherit;
-    font-size: 30px;
-    padding: 20px 25px;
-    cursor: pointer;
-    background-color: #eee;
-    text-align: center;
-    border-radius: 30px;
-    transition: all 0.2s ease-out;
-  }
-  
-  .btn:hover {
-    background-color: green;
-    color: #eee;
-  }
-  
-  .number-box {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 180px;
-    padding: 25px;
-    background: #eee;
-    color: #333;
-    font-size: 60px;
-    text-align: center;
-    transform: translate(-50%, 50%);
-  }
-  main {
-    height: 600px;
-    color: #eee;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .right {
-    width: 400px;
-    font-size: 20px;
-  }
-  
-  .left {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .guess {
-    background: none;
-    border: 5px solid #eee;
-    font-family: inherit;
-    color: inherit;
-    font-size: 40px;
-    text-align: center;
-    width: 300px;
-    display: block;
-    margin-bottom: 20px;
-    padding: 50px;
-  }
-  .msg {
-    margin-bottom: 100px;
-    font-size: 35px;
-  }
-  .score {
-    margin-bottom: 40px;
-  }
-  .check-none {
-    display: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+  height: 150px;
+}
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: tomato;
+  text-shadow: 2px 2px 2px black;
+}
+
+.between {
+  text-align: right;
+  margin: 30px 10px;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-left: 15px;
+  border: 2px solid black;
+  font-family: inherit;
+  font-size: 30px;
+  padding: 20px 25px;
+  cursor: pointer;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 30px;
+  transition: all 0.15s ease-out;
+}
+
+.btn:hover {
+  border-color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+
+.number-box {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 180px;
+  padding: 25px;
+  background: #eee;
+  color: #333;
+  font-size: 60px;
+  text-align: center;
+  transform: translate(-50%, 50%);
+}
+main {
+  height: 600px;
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right {
+  width: 400px;
+  font-size: 20px;
+}
+
+.left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guess {
+  background: none;
+  border: 5px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 40px;
+  text-align: center;
+  width: 300px;
+  display: block;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.msg {
+  margin-bottom: 100px;
+  font-size: 35px;
+}
+.score {
+  margin-bottom: 40px;
+}
+.check-none {
+  display: none;
+}
+.align-center {
+  text-align: center;
+  flex-direction: column-reverse;
+  margin-top: 60px;
+}
