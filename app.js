@@ -1,5 +1,8 @@
 // selimozo
 
+const jsConfetti = new JSConfetti()
+
+
 const colors = ["#2193b0", "#753a88", "#8B4000", "#42275a", "#2c3e50"];
 const getColor = () => colors[Math.floor(Math.random() * colors.length)];
 
@@ -25,6 +28,7 @@ document.querySelector(".check").addEventListener("click", () => {
     document.querySelector(".guess").classList.add("check-none");
     document.querySelector("main").classList.add("align-center");
     document.querySelector(".shortcuts").classList.add("check-none");
+    jsConfetti.addConfetti()
     // check topScore
     if (score > topScore) {
       topScore = score;
