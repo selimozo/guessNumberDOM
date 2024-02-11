@@ -181,12 +181,18 @@ main {
 @media screen and (max-width: 600px) {
   .guess {
     height: 100px;
-    width: 150px;
+    width: 140px;
     font-size: 34px;
     padding: 5px;
-    margin-top: 25px;
+    margin-top: 0px;
   }
-
+  .number-box {
+    width: 140px;
+    padding: 5px;
+  }
+  .msg {
+    margin-top: 5px ;
+  }
   .btn {
     font-size: 18px;
     padding: 15px;
