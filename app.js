@@ -93,7 +93,8 @@ window.addEventListener("load", () => {
 
 // shortcuts
 document.addEventListener("keydown", (e) => {
-  if (e.code === "Enter") {
+  if (e.key === "Enter") {
+    e.preventDefault();
     // when u press enter trigger check button
     document.querySelector(".check").click();
   }
