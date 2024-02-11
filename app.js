@@ -29,6 +29,7 @@ document.querySelector(".check").addEventListener("click", () => {
     document.querySelector("main").classList.add("align-center");
     document.querySelector(".shortcuts").classList.add("check-none");
     jsConfetti.addConfetti()
+    document.querySelector(".again").classList.add("finitoa");
     // check topScore
     if (score > topScore) {
       topScore = score;
@@ -58,6 +59,8 @@ document.querySelector(".check").addEventListener("click", () => {
       document.querySelector("main").classList.add("align-center");
       document.querySelector(".number-box").textContent = randomNumber;
       document.querySelector(".msg").classList.add("finito");
+      document.querySelector(".again").classList.add("finitoa");
+      
     }
   }
 });
@@ -83,6 +86,8 @@ document.querySelector(".again").onclick = () => {
   document.querySelector("main").classList.remove("align-center");
   document.querySelector(".shortcuts").classList.remove("check-none");
   document.querySelector(".guess").focus();
+  document.querySelector(".again").classList.remove("finitoa");
+
 };
 
 // focus on input
