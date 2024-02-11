@@ -64,6 +64,7 @@ document.querySelector(".check").addEventListener("click", () => {
 
 document.querySelector(".check").addEventListener("click", () => {
   document.querySelector(".guess").value = ""
+  document.querySelector(".guess").focus();
 })
 
 
@@ -81,6 +82,7 @@ document.querySelector(".again").onclick = () => {
   document.querySelector(".guess").classList.remove("check-none");
   document.querySelector("main").classList.remove("align-center");
   document.querySelector(".shortcuts").classList.remove("check-none");
+  document.querySelector(".guess").focus();
 };
 
 // focus on input
